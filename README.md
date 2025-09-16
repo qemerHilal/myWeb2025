@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <h1>Hi I am Nuria</h1>
-      <h2>Beginner front-end web developer and youtube content creator</h2>
+      
       <h3>This project shows you, how to show what you want and hide the rest!</h3>
       
       <title> creating a data filter </title>
