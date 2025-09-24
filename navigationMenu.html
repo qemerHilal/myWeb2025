@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create navigation menu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .heading{
+
+        height:200px;
+        width:100%;
+        position:fixed;
+        margin:0;
+        padding:0;
+        background-color: black;
+        color:white;
+        font-family: Verdana;
+        top:0;
+        text-align: center;
+        padding:20px;
+        left:0;
+      }
+
+      .menu{
+        position:relative;
+        top:240px;
+        background-color: orange;        
+       
+        overflow: hidden;
+          margin-bottom: 300px;
+
+
+      }
+
+      .menu a{
+        display: block;
+       float:inherit;
+      
+        padding:20px;
+        color:maroon;
+        text-decoration: none;
+        font-size:30px;
+        font-family: 'Segoe UI';
+        text-align: center;
+        
+    
+
+      }
+
+      .menu a:hover{
+        background-color:white;
+        text-decoration: underline;
+
+      }
+
+      .section{
+        
+        width:90%;
+        height:400px;
+        background-color: black;
+        color:white;
+        position:relative;
+        border-radius: 15px;
+        box-shadow: 4px 5px 8px black;
+        margin:auto ;
+        margin-bottom:50px;
+        text-align: center;
+
+      }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="heading">
+            <h1>Welcome to learning how to create navigation menu </h1>
+        </div>
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Service</a>
+            <a href="#contact">Contact </a>
+        </div>
+
+        <div class="section" id="about">About
+           <p>
+            The European languages are members of the same family.<br> Their separate existence is a myth. For science,<br> music, sport, etc, Europe uses the same vocabulary.<br> The languages only differ in their grammar, their pronunciation<br> and their most common words. Everyone realizes<br> why a new common language would be desirable: one <br>could refuse to pay expensive translators.<br>
+           </p>
+        </div>
+        <div class="section" id="services">Service
+            <p>Everyone realizes why a new common language would<br> be desirable: one could refuse to pay expensive translators.<br> To achieve this, it would be necessary to have uniform <br>grammar, pronunciation and more common words. If several<br> languages coalesce, the grammar of the resulting<br> language is more simple and regular than that <br>of the individual languages.</p>
+        </div>
+        <div class="section" id="contact">Contact
+
+                  <a href="#">Phone
+                     <i class='fa fa-phone' style="font-size:48px;color:blue;"></i>
+                  </a>
+                  <a href="#">Instagram
+                    <i class="fa fa-instagram" style="font-size:48px;color:rgb(223, 22, 136)"></i>
+                  </a>
+                  <a href="#">Youtube
+                     <i class="fa fa-youtube-play" style="font-size:48px;color:red;"></i>
+                  </a>
+                  
+        </div>
+
+
+
+
+    </div>
+    
+</body>
+</html>
