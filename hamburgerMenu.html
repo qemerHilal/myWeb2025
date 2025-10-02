@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>create hamburger menu</title>
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        .menu{
+            overflow: hidden;
+            background-color: black;
+           
+            
+            
+        }
+        .menu a{
+            display:block;
+            float:left;
+           text-decoration: none;
+           padding:20px;
+           font-size:20px;
+           font-weight:bold;
+            color:white;
+
+        }
+       .menu .icon{
+          
+           display:none;
+         
+         
+        }
+        
+        .menu a:hover{
+            background-color: red;
+
+        }
+
+        @media screen and (max-width:600px){
+            .menu a{
+                display:none;
+                position:relative;
+                transform:translateX(-100px);
+                transition: transform 1s ease-in-out;
+
+            }
+            .menu .icon {
+               display:block;
+               float:right;
+               position:absolute;
+               right:0;
+               background-color: black;
+             }
+        }
+         @media screen and (max-width:600px){
+            .menu.show a{
+                display:block;
+                float:none;
+                transform: translateX(400px);
+
+            }
+             .menu .icon {
+               display:block;
+               float:right;
+               position:absolute;
+               right:0;
+               background-color: black;
+             }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu" id="mm">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="javascript:void(0);" onclick="showHamMenu()" class="icon" >
+             <i class="fa fa-bars"></i>
+        </a>
+
+    </div>
+    <script>
+        function showHamMenu()
+        {
+            const bb=document.getElementById("mm");
+            if(bb.className=="menu")
+           {
+               bb.classList.add("show");
+           }
+           else{
+            bb.classList.remove("show");
+           }
+            
+    
+          
+        
+        }
+    </script>
+   
+</body>
+</html>
