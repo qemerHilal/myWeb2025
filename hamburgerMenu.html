@@ -44,15 +44,13 @@
         @media screen and (max-width:600px){
             .menu a{
                 display:none;
-                position:relative;
-                transform:translateX(-100px);
-                transition: transform 1s ease-in-out;
-
+                
+              
             }
-            .menu .icon {
+            .menu a.icon {
                display:block;
                float:right;
-               position:absolute;
+               
                right:0;
                background-color: black;
              }
@@ -61,13 +59,15 @@
             .menu.show a{
                 display:block;
                 float:none;
-                transform: translateX(400px);
+                position:relative;
+              
 
             }
-             .menu .icon {
+             .menu a.icon {
                display:block;
                float:right;
                position:absolute;
+               top:0;
                right:0;
                background-color: black;
              }
