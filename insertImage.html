@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+   
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>insert image in to your webpage using html</title>
+
+    <style>
+        .receipe{
+            position:relative;
+            top:100px;
+            display:flex;
+            flex-wrap: wrap;
+            background-color: red;
+            margin:auto auto;
+        }
+        .content{
+            color:white;
+            font-size:40px;
+            font-weight:bold;
+            
+
+
+        }
+        .content p{
+            position:relative;
+            left:50px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" >
+            <button class="navbar-toggler" type="button" data-bs-target="#navMenu" data-bs-toggle="collapse" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav me-auto mb-2 mb-0-lg">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Receipe</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Dropdown</a>
+                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Link 1</a> </li>
+                            <i><a class="dropdown-item" href="#">Link 2</a></i>
+                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                         </ul>
+                         
+                     </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="receipe">
+         <div class="content">
+         <img src="./images/f2.png" style="width:400px; height:250px; " alt="receipe1">
+         <p>Burger</p>
+         </div>
+
+         <div class="content">
+         <img src="./images/f3.png" style="width:400px; height:250px; " alt="receipe1">
+         <p>Pizza</p>
+         </div>
+
+         <div class="content">
+         <img src="./images/f5.png" style="width:400px; height:250px; " alt="receipe1">
+         <p>Chips</p>
+         </div>
+
+         <div class="content">
+         <img src="./images/f7.png" style="width:400px; height:250px; " alt="receipe1">
+         <p>Burger</p>
+         </div>
+
+    </div>
+   
+    
+</body>
+</html>
