@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create CSS card using css flexbox</title>
+    <style>
+         .dishes{
+            display:flex;
+            justify-content:center;
+             flex-wrap: wrap;
+             
+        
+
+        }
+        .card{
+            box-shadow: 2px 5px 6px 8px gray;
+            width:350px;
+            padding:20px;
+            text-align: center;
+            margin-left:20px;
+            margin-top:45px;
+
+          
+        }
+        .card button{
+            width:70%;
+            height:45px;
+            border-radius:10px;
+            color:white;
+            background-color: black;
+            font-size:20px;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div class="dishes">
+        <div class="card">
+            <img src="images/f2.png" style="width:250px;" alt="burger">
+            <h1>Beef Burger</h1>
+            <p>price $5</p>
+            <button>Order now</button>
+        </div>
+
+        <div class="card">
+            <img src="images/f1.png" style="width:250px;" alt="pizza">
+            <h1>Pizza</h1>
+            <p>price $5</p>
+            <button>Order now</button>
+        </div>
+
+        <div class="card">
+            <img src="images/f3.png" style="width:250px;" alt="pizza">
+            <h1>Pizza</h1>
+            <p>price $5</p>
+            <button>Order now</button>
+        </div>
+
+        <div class="card">
+            <img src="images/f7.png" style="width:250px;" alt="burger">
+            <h1>Beef Burger</h1>
+            <p>price $5</p>
+            <button>Order now</button>
+        </div>
+        <div class="card">
+            <img src="images/f5.png" style="width:250px;" alt="fries">
+            <h1>French friez</h1>
+            <p>price $5</p>
+            <button>Order now</button>
+        </div>
+    </div>
+    
+</body>
+</html>
