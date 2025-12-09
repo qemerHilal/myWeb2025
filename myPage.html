@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my page</title>
+
+    <style>
+        .header{
+            margin:auto;
+            font-size:35px;
+            background-color: black;
+            color:white;
+            text-align: center;
+        }
+        .menu{
+            display:flex;
+           
+        }
+        .menu a{
+             text-decoration: none;
+             padding:20px;
+             font-size: 35px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to my page</h1>
+    </div>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+
+    </div>
+    <p id="message"></p>
+    <button class="btn" onclick="clickMe()">Click here</button>
+
+    <script>
+        function clickMe()
+        {
+          const cc=document.getElementById("message");
+          cc.innerHTML="welcome"
+        }
+    </script>
+</body>
+</html>
