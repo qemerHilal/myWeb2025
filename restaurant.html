@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant page</title>
+    <style>
+         .heading{
+            font-size:50px;
+            text-align: center;
+            background-color: black;
+            color:white;
+         }
+         .menu{
+            float:left;
+            overflow: hidden;
+            
+         }
+         .menu a{
+            text-decoration: none;
+            font-size:25px;
+            padding: 20px;
+
+         }
+         .menu a:hover{
+            background-color: red;
+            text-decoration: underline;
+         }
+         .gridContainer{
+            margin-top:200px;
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+            gap:10px;
+            justify-content: center;
+            align-content: center;
+         }
+    </style>
+    
+</head>
+<body>
+    <div class="heading">
+        <h1>Welcome to serenity foods</h1>
+    </div>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Menus</a>
+        <a href="#">About us</a>
+        <a href="#">Contact us</a>
+    </div>
+    <div class="gridContainer">
+        <div class="item1">
+            <img src="images/f2.png" style="width:100%;">
+        </div>
+        <div class="item2">
+            <img src="images/f3.png" style="width:100%;">
+        </div>
+        <div class="item3">
+            <img src="images/f4.png" style="width:100%;">
+
+        </div>
+        <div class="item4">
+            <img src="images/f5.png" style="width:100%;">
+        </div>
+        <div class="item5">
+            <img src="images/f6.png" style="width:100%;">
+
+        </div>
+        <div class="item6">
+            <img src="images/f7.png" style="width:100%;">
+        </div>
+        <div class="item7">
+            <img src="images/gurageaTibs.jpg" style="width:100%;">
+        </div>
+        <div class="item8">
+            <img src="images/hero-bg.jpg" style="width:100%;">
+        </div>
+    </div>
+    
+</body>
+</html>
