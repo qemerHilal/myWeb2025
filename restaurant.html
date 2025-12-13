@@ -28,12 +28,30 @@
          }
          .gridContainer{
             margin-top:200px;
+            min-height: 800px;
             display:grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+            grid-template-columns: repeat(auto-fit, minmax(400px,auto));
             gap:10px;
-            justify-content: center;
-            align-content: center;
+           
+           
          }
+
+        .item{
+            
+            border:1px solid rgb(54, 46, 46);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(-10px);
+            transition:transform 0.5s ease-in-out;
+             
+        }
+        .item:hover{
+          transform:translateY(20px);
+          background-color: brown;
+          
+        }
+      
     </style>
     
 </head>
@@ -48,33 +66,82 @@
         <a href="#">Contact us</a>
     </div>
     <div class="gridContainer">
-        <div class="item1">
-            <img src="images/f2.png" style="width:100%;">
+        <div class="item">
+           
+                
+                <div class="content">
+                  <img src="images/f2.png" style="width:50px;">
+                  <p>fast food</p>
+                  <button>click to order</button>
+                </div>
+                            
         </div>
-        <div class="item2">
-            <img src="images/f3.png" style="width:100%;">
+        <div class="item">
+            
+            <div class="content">
+                <img src="images/f3.png" style="width:50px;">
+              <p>fast food</p>
+              <button>click to order</button>
+            </div>
         </div>
-        <div class="item3">
-            <img src="images/f4.png" style="width:100%;">
+        <div class="item">
+           
+            <div class="content">
+              <img src="images/f4.png" style="width:50px;">
+              <p>fast food</p>
+            <button>click to order</button>
+            </div>
 
         </div>
-        <div class="item4">
-            <img src="images/f5.png" style="width:100%;">
+        <div class="item">
+            
+            <div class="content">
+                <img src="images/f5.png" style="width:50px;">
+              <p>fast food</p>
+               <button>click to order</button>
+            </div>
         </div>
-        <div class="item5">
-            <img src="images/f6.png" style="width:100%;">
+        <div class="item">
+            
+            <div class="content">
+                <img src="images/f6.png" style="width:50px;">
+              <p>fast food</p>
+            <button>click to order</button>
+            </div>
 
         </div>
-        <div class="item6">
-            <img src="images/f7.png" style="width:100%;">
+        <div class="item">
+            
+            <div class="content">
+                <img src="images/f7.png" style="width:50px;">
+              <p>fast food</p>
+            <button>click to order</button>
+            </div>
         </div>
-        <div class="item7">
-            <img src="images/gurageaTibs.jpg" style="width:100%;">
+        <div class="item">
+           
+            <div class="content">
+             <img src="images/gurageaTibs.jpg" style="width:50px;">
+              <p>fast food</p>
+            <button>click to order</button>
+            </div>
         </div>
-        <div class="item8">
-            <img src="images/hero-bg.jpg" style="width:100%;">
+        <div class="item">
+           
+            <div class="content" id="content">
+                 <img src="images/hero-bg.jpg" style="width:50px;">
+              <p>fast food</p>
+           
+            </div>
+             <button onclick="orderFun()">click to order</button>
         </div>
     </div>
-    
+    <script>
+    function orderFun()
+    {
+        document.getElementById("content").style.backgroundColor="red";
+        
+    }
+    </script>
 </body>
 </html>
